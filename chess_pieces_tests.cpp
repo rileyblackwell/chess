@@ -4,6 +4,18 @@
 using namespace std;
 
 
+TEST(test_position_ctor) {
+    Position pos(1, 2);
+    ASSERT_EQUAL(pos.get_x(), 1);
+    ASSERT_EQUAL(pos.get_y(), 2);
+}
+
+// TEST(test_pawn_ctor) {
+//     ChessPiece* pawn = Pawn()
+//     ASSERT_EQUAL(pawn.get_x_pos(), 1);
+//     ASSERT_EQUAL(pawn.get_y_pos(), 2);
+// }
+
 // TEST (test_pieces) {
 //     Knight piece(1);
 //     BlackKnight bpiece(1);
